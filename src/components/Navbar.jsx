@@ -7,12 +7,13 @@ import SearchBar from './SearchBar'
 const Navbar = () => {
   return (
     <Stack 
-      direction='row' 
+      direction={{ sm:'column', md:'row' }} 
+      gap='1rem'
       alignItems='center' 
       p={2} 
       sx={{ 
         positon: 'sticky', 
-        backgroun: '#000',
+        background: '#00586B',
         top: 0,
         justifyContent: 'space-between'
       }}
